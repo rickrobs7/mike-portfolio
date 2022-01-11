@@ -1,0 +1,339 @@
+
+/* Colors: 
+h2: White
+bg1: #222222
+bg2: #e7a935
+bg-about: #313131 
+contact font: #ffefb8
+paragraph: #707478
+*/
+
+
+/*------------GENERAL------------*/
+
+body {
+  background-color: #222222;
+  color: #707478;
+}
+
+html,body{
+  overflow-x: hidden;
+}
+
+.join-button, .form-control {
+    border-radius: 10px;
+}
+p, a, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  color: #020204;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 300%;
+  color: white;
+}
+
+
+/*------------below-header------------*/
+.below-header {
+  background-image: linear-gradient(to right, #222222, #e7a935);  
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 900px;
+  }
+
+  /* Change the color of links on hover */
+  header a:hover {
+    color: #e7a935;
+    font-weight: bold;
+  }
+
+  .navlinks a {
+    text-align: center;
+    float: left;
+    color:#cdcdcd;
+    padding: 0 13px;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 8px 0;
+    font-weight: bold;
+  }
+
+  header {
+    padding: 10px;
+    position: fixed;
+    background-color: #222222;
+  }
+
+/* If the screen size is 1100px wide or less*/
+@media screen and (max-width: 1100px) {
+  .below-header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+    }
+  }
+
+  /* If the screen size is 800px wide or less*/
+@media screen and (max-width: 800px) {
+  .below-header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+  .below-header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+    }
+  }
+
+/*------------TITLE SECTION------------*/
+
+/* If the screen size is 1201px wide or more*/
+@media screen and (min-width: 1201px) {
+  .title {
+    float: left;
+    padding-top: 40rem;
+    padding-left: 10rem;
+    font-size: 350%;
+  }
+
+  .title p {
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+    text-align: left;
+    margin-top: -50px;
+  }
+
+  .salutation {
+    color: #cdcdcd;
+    font-size: 70%;
+  }
+
+  .name {
+    color: #e7a935;
+    font-weight: bold;
+    margin-left: -3px;
+    font-size: 150%;
+  }
+  
+  .profession {
+    color: #cdcdcd;
+    font-size: 115%;
+  }
+}
+
+/* If the screen size is 1200px wide or less*/
+@media screen and (max-width: 1200px) {
+ .title {
+    float: left;
+    padding-top: 40rem;
+    padding-left: 10vw;
+    font-size: 4vw;
+  }
+
+  .title p {
+    color: #020204;
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+    text-align: left;
+    margin-top: -5vw;
+  }
+
+  .name {
+    color: #020204;
+    font-weight: bold;
+    margin-left: -3px;
+    font-size: 200%;
+  }
+  
+  .profession {
+    display: inline;
+    padding: 10px 30px;
+    background: #4abdfa;
+    text-align: left;
+  }
+}
+
+
+/*------------CONTACT SECTION------------*/
+
+#contact {
+  background: #e9a72d;
+  padding: 80px 0;
+}
+
+
+#contact h2 {
+  margin-top: 0px;
+  color: #ffefb8;
+  font-size: 350%;
+}
+
+.join-button {
+  background: #ffefb8;
+  color: black;
+  height: 35px;
+}
+
+.contact-info p {
+  font-size: 150%;
+  color: #ffefb8;
+}
+
+.contact-info i {
+  font-size: 30px;
+}
+
+/*------------WORKS SECTION------------*/
+
+.works-section p {
+  font-size: 150%;
+  margin-left: 34px;
+  margin-bottom: -30px;
+}
+
+/*------------LOAD MORE------------*/
+.blogBox {
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+.blogBox .item {
+  background: #f4f4f4;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  /* max-height: 425px; */
+}
+.blogBox .item:hover {
+  background: #e8e8e8;
+  cursor: pointer;
+}
+.blogBox .item img {
+  width: 100%;
+  border: 1px solid #e8e8e8;
+  filter: grayscale(100%);
+}
+
+.blogBox .item img:hover {
+  filter: grayscale(0%);
+  -webkit-transition: 0.2s -webkit-filter linear;
+  -moz-transition: 0.2s -moz-filter linear;
+  -moz-transition: 0.2s filter linear;
+  -ms-transition: 0.2s -ms-filter linear;
+  -o-transition: 0.2s -o-filter linear;
+  transition: 0.2s filter linear, 0.2s -webkit-filter linear;
+}
+
+.blogBox .item p {
+  padding-bottom: 40px;
+}
+
+.blogBox .item h2 {
+  margin: 15px 0;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+/* .blogBox .item a {
+  padding: 5px 10px 2px;
+  border: 1px solid #616161;
+  color: #616161;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+} */
+.blogBox .item a:hover {
+  background: #616161;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {
+	.blogBox .featured h2 {
+		font-size: 42px;
+	}
+}
+@media screen and (min-width: 991px) {
+	.blogBox .featured h2 {
+		font-size: 30px;
+		font-style: italic;
+	}
+	.blogBox .featured {
+		max-width: 50%;
+		width: 100%;
+		padding: 50px;
+		float: left;
+		background: inherit;
+		min-height: 378px;
+	}
+	.blogBox .featured img {
+		max-width: 50%;
+		width: 100%;
+		float: left;
+		min-height: 378px;
+	}
+}
+@media screen and (min-width: 768px) {
+	.blogBox .item img {
+		/* height: 325px; */
+	}
+}
+
+.action-icons {
+  padding: 3px 0 0 0;
+}
+
+.social-icons {
+  padding-top: 30px;
+  font-size: 30px;
+}
+
+.fa-inverse {
+  color: #020204;
+}
+
+.fa-stack-2x {
+  color: white;
+}
+
+/*-------------------- ABOUT SECTION --------------------*/
+
+.about-section {
+  padding: 0 300px;
+}
+
+.about-section p {
+  color: #707478;
+  padding-top: 20px;
+  margin-bottom: -30px;
+  font-size: 150%;
+}
+
+.about-section h3 {
+  font-weight: bold;
+}
+
+/* Content */
+.introduction {
+ /* text-align: right; */
+ font-size: 25px;
+}
+
+#Skills img {
+  height: 60px;
+}
+
+.fa-stack .fa { color: #ffefb8; }
+.fa-stack .fa.fa-circle-thin { color: #ffefb8; }
+.fa-stack .fa.fa-circle { opacity:0.0; color:#ffefb8; }
+
+.fa-stack a:hover .fa.fa-inverse { color: #e7a935; }
+.fa-stack:hover .fa.fa-circle-thin { color: #ffefb8; }
+.fa-stack:hover .fa.fa-circle { opacity:1.0 }

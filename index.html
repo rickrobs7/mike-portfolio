@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>Portfolio</title>
+</head>
+
+<body class>
+
+   <header class = "container-fluid">
+   <div class ="navlinks">
+      <a href="#about">About</a>
+      <a href="#works">Works</a>
+      <a href="#contact">Contact</a>
+      <a href="#blog">Blog</a>
+   </div>
+</header>
+
+
+<!------------HEADER------------>
+<div class = "below-header">
+      <div class = "title">
+         <p class = "salutation">Hello</p>
+         <p class = "name">I'm Mike</p>
+         <p class = "profession">Front-End Web Developer</p>
+      </div>
+   </div>
+    
+
+
+
+
+<!------------ABOUT SECTION------------>
+
+    <div class = "text-center about-section">
+   <h2 id = "about">About Me</h2>
+
+   <div class="row">
+      <img src = "img/about-image.PNG" class="col-sm-12 col-md-6">
+      <section class="col-sm-12 col-md-6">
+         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>  
+    </div>
+
+   </div>
+
+ 
+
+<!------------WORKS SECTION------------>
+
+<div class = "text-center works-section">
+   <h2 id = "works">My Work</h2>
+</div>
+
+<!------------CONTACT SECTION------------>
+
+<div id="contact">
+<div class="container py-5 text-center">
+      <h2>Contact Me</h2>
+
+   <div class="row p-5 contact-info">
+      <div class="col-sm-12 col-md-4">
+        <p><i class="fa fa-envelope"></i> mikebird148@gmail.com </p>
+      </div>
+      <div class="col-sm-12 col-md-4">
+         <p><i class="fa fa-phone"></i> ‪(360) 853-5297‬</p>
+      </div>
+      <div class="col-sm-12 col-md-4">
+         <p><i class="fa fa-map-marker"></i> Gold Bar, WA</p>
+      </div>  
+    </div>
+
+<div class="social-icons text-center">
+
+   <span class="fa-stack fa-sm">
+      <i class="fa fa-circle fa-stack-2x "></i>
+      <i class="fa fa-circle-thin fa-stack-2x"></i>
+      <a href = "http://www.facebook.com"><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></a>
+    </span>
+
+    <span class="fa-stack fa-sm">
+      <i class="fa fa-circle fa-stack-2x "></i>
+      <i class="fa fa-circle-thin fa-stack-2x"></i>
+      <a href = "http://www.linkedin.com"><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></a>
+    </span>
+
+    <span class="fa-stack fa-sm">
+      <i class="fa fa-circle fa-stack-2x "></i>
+      <i class="fa fa-circle-thin fa-stack-2x"></i>
+      <a href = "http://www.twitter.com"><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></a>
+    </span>
+
+</div>
+
+</div><!-- content container -->
+</div><!--contact-->
+
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+$(function() {
+  var topoffset = 0; //variable for menu height
+
+  //Use smooth scrolling when clicking on navigation
+  $('.navbar-nav a').click(function() {
+    if (location.pathname.replace(/^\//,'') ===
+      this.pathname.replace(/^\//,'') &&
+      location.hostname === this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top-topoffset
+        }, 500);
+        return false;
+      } //target.length
+    } //click function
+  }); //smooth scrolling
+
+});
+</script>
+
+<!------------ABOUT TABS------------>
+
+
+<script>
+   function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+</script>
+
+</body>
+</html>
+
+
