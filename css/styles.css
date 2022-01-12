@@ -2,7 +2,7 @@
 /* Colors: 
 h2: White
 bg1: #222222
-bg2: #e7a935
+bg2: #26bfd4
 bg-about: #313131 
 contact font: #ffefb8
 paragraph: #707478
@@ -40,15 +40,15 @@ h2 {
 
 /*------------below-header------------*/
 .below-header {
-  background-image: linear-gradient(to right, #222222, #e7a935);  
+  background-image: linear-gradient(to right, #222222, #26bfd4);  
   background-size: cover;
   background-repeat: no-repeat;
-  height: 900px;
+  height: 600px;
   }
 
   /* Change the color of links on hover */
   header a:hover {
-    color: #e7a935;
+    color: #26bfd4;
     font-weight: bold;
   }
 
@@ -74,7 +74,7 @@ h2 {
   .below-header {
     background-size: cover;
     background-repeat: no-repeat;
-    height: 900px;
+    height: 600px;
     }
   }
 
@@ -83,7 +83,7 @@ h2 {
   .below-header {
     background-size: cover;
     background-repeat: no-repeat;
-    height: 900px;
+    height: 600px;
     }
   }
 
@@ -91,7 +91,7 @@ h2 {
   .below-header {
     background-size: cover;
     background-repeat: no-repeat;
-    height: 900px;
+    height: 600px;
     }
   }
 
@@ -101,7 +101,7 @@ h2 {
 @media screen and (min-width: 1201px) {
   .title {
     float: left;
-    padding-top: 40rem;
+    padding-top: 30rem;
     padding-left: 10rem;
     font-size: 350%;
   }
@@ -118,7 +118,7 @@ h2 {
   }
 
   .name {
-    color: #e7a935;
+    color: #26bfd4;
     font-weight: bold;
     margin-left: -3px;
     font-size: 150%;
@@ -134,30 +134,32 @@ h2 {
 @media screen and (max-width: 1200px) {
  .title {
     float: left;
-    padding-top: 40rem;
+    padding-top: 30rem;
     padding-left: 10vw;
     font-size: 4vw;
   }
 
   .title p {
-    color: #020204;
     font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
     text-align: left;
-    margin-top: -5vw;
+    margin-top: -4vw;
+  }
+
+  .salutation {
+    color: #cdcdcd;
+    font-size: 70%;
   }
 
   .name {
-    color: #020204;
+    color: #26bfd4;
     font-weight: bold;
     margin-left: -3px;
-    font-size: 200%;
+    font-size: 150%;
   }
   
   .profession {
-    display: inline;
-    padding: 10px 30px;
-    background: #4abdfa;
-    text-align: left;
+    color: #cdcdcd;
+    font-size: 115%;
   }
 }
 
@@ -165,26 +167,22 @@ h2 {
 /*------------CONTACT SECTION------------*/
 
 #contact {
-  background: #e9a72d;
+  background-image: linear-gradient(to right, #222222, #26bfd4);  
+
+  /* background: #26bfd4; */
   padding: 80px 0;
 }
 
 
 #contact h2 {
   margin-top: 0px;
-  color: #ffefb8;
+  color:  #cdcdcd;
   font-size: 350%;
-}
-
-.join-button {
-  background: #ffefb8;
-  color: black;
-  height: 35px;
 }
 
 .contact-info p {
   font-size: 150%;
-  color: #ffefb8;
+  color:  #cdcdcd;
 }
 
 .contact-info i {
@@ -305,10 +303,6 @@ h2 {
 
 /*-------------------- ABOUT SECTION --------------------*/
 
-.about-section {
-  padding: 0 300px;
-}
-
 .about-section p {
   color: #707478;
   padding-top: 20px;
@@ -330,10 +324,10 @@ h2 {
   height: 60px;
 }
 
-.fa-stack .fa { color: #ffefb8; }
-.fa-stack .fa.fa-circle-thin { color: #ffefb8; }
-.fa-stack .fa.fa-circle { opacity:0.0; color:#ffefb8; }
+.fa-stack .fa { color:  #cdcdcd; }
+.fa-stack .fa.fa-circle-thin { color:  #cdcdcd; }
+.fa-stack .fa.fa-circle { opacity:0.0; color: #cdcdcd; }
 
-.fa-stack a:hover .fa.fa-inverse { color: #e7a935; }
-.fa-stack:hover .fa.fa-circle-thin { color: #ffefb8; }
+.fa-stack a:hover .fa.fa-inverse { color: #26bfd4; }
+.fa-stack:hover .fa.fa-circle-thin { color:  #cdcdcd; }
 .fa-stack:hover .fa.fa-circle { opacity:1.0 }
