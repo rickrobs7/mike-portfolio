@@ -67,6 +67,7 @@ h2 {
     padding: 10px;
     position: fixed;
     background-color: #222222;
+    z-index: 99;
   }
 
 /* If the screen size is 1100px wide or less*/
