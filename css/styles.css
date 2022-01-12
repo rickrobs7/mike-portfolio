@@ -69,32 +69,6 @@ header {
   z-index: 99;
 }
 
-/* If the screen size is 1100px wide or less*/
-@media screen and (max-width: 1100px) {
-  .below-header {
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 600px;
-  }
-}
-
-/* If the screen size is 800px wide or less*/
-@media screen and (max-width: 800px) {
-  .below-header {
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 600px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .below-header {
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 600px;
-  }
-}
-
 /*------------TITLE SECTION------------*/
 
 /* If the screen size is 1201px wide or more*/
@@ -194,7 +168,6 @@ header {
 .works-section p {
   font-size: 150%;
   margin-left: 34px;
-  margin-bottom: -30px;
 }
 
 @media screen and (min-width: 1200px) {
