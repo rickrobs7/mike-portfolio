@@ -1,23 +1,20 @@
 $("document").ready(function () {
-  $(".project-name[data-type='mineralwater']").css(
-    "background-color",
-    "#5b6ccf"
-  );
-  $(".project-name[data-type='vitamin']").css("background-color", "#2f6e3f");
-  $(".project-name[data-type='proteinbar']").css("background-color", "#602c70");
+  $(".project-name[data-type='react']").css("background-color", "#5b6ccf");
+  $(".project-name[data-type='htmlcss']").css("background-color", "#2f6e3f");
+  $(".project-name[data-type='game']").css("background-color", "#602c70");
 
   document
     .querySelector("#html-css")
     .addEventListener("change", function (evt) {
-      updateProjectView("vitamins", evt.target.checked);
+      updateProjectView("htmlcsss", evt.target.checked);
     });
 
   document.querySelector("#reactjs").addEventListener("change", function (evt) {
-    updateProjectView("mineralwater", evt.target.checked);
+    updateProjectView("react", evt.target.checked);
   });
 
   document.querySelector("#games").addEventListener("change", function (evt) {
-    updateProjectView("proteinbar", evt.target.checked);
+    updateProjectView("game", evt.target.checked);
   });
 
   $(".project-item").each(function () {
@@ -34,14 +31,14 @@ $("document").ready(function () {
 function updateProjectView(categoryName, bVisible) {
   var dataSelectorVal = "";
   switch (categoryName) {
-    case "vitamins":
-      dataSelectorVal = "h2[data-type='vitamin']";
+    case "htmlcsss":
+      dataSelectorVal = "h2[data-type='htmlcss']";
       break;
-    case "mineralwater":
-      dataSelectorVal = "h2[data-type='mineralwater']";
+    case "react":
+      dataSelectorVal = "h2[data-type='react']";
       break;
-    case "proteinbar":
-      dataSelectorVal = "h2[data-type='proteinbar']";
+    case "game":
+      dataSelectorVal = "h2[data-type='game']";
       break;
   }
   $(".project-item")
