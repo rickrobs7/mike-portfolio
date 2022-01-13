@@ -133,12 +133,13 @@ header {
   .salutation {
     color: #cdcdcd;
     font-size: 70%;
+    padding-bottom: 0.5vw;
   }
 
   .name {
     color: #26bfd4;
     font-weight: bold;
-    margin-left: -3px;
+    margin: 0 0 27px -3px;
     font-size: 150%;
   }
 
