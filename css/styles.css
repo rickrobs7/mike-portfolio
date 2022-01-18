@@ -313,15 +313,16 @@ header {
 
 #projects .project-list .project-item .project-name {
   background: #d14348;
-  color: #f3d350;
+  color: white;
+  opacity: 0.8;
   font-weight: 700;
-  font-size: 120%;
+  font-size: 150%;
   text-align: center;
   position: absolute;
   bottom: 0;
   width: 100%;
   display: none;
-  padding: 3px;
+  padding: 3%;
 }
 
 #projects .project-list .project-item:focus .project-name,
