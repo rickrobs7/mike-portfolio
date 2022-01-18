@@ -87,12 +87,45 @@ header {
 /*------------TITLE SECTION------------*/
 
 /* If the screen size is 1201px wide or more*/
-@media screen and (min-width: 1201px) {
+.title {
+  float: left;
+  padding-top: 27rem;
+  padding-left: 10rem;
+  font-size: 350%;
+}
+
+.title p {
+  font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans,
+    Helvetica Neue, Arial, sans-serif;
+  text-align: left;
+  margin-top: -50px;
+}
+
+.salutation {
+  color: #cdcdcd;
+  font-size: 70%;
+  padding-bottom: 10px;
+}
+
+.name {
+  color: #26bfd4;
+  font-weight: bold;
+  margin: 0 0 27px -3px;
+  font-size: 150%;
+}
+
+.profession {
+  color: #cdcdcd;
+  font-size: 115%;
+}
+
+/* If the screen size is 600px wide or less*/
+@media screen and (max-width: 600px) {
   .title {
     float: left;
     padding-top: 27rem;
-    padding-left: 10rem;
-    font-size: 350%;
+    padding-left: 5rem;
+    font-size: 300%;
   }
 
   .title p {
@@ -106,41 +139,6 @@ header {
     color: #cdcdcd;
     font-size: 70%;
     padding-bottom: 10px;
-  }
-
-  .name {
-    color: #26bfd4;
-    font-weight: bold;
-    margin: 0 0 27px -3px;
-    font-size: 150%;
-  }
-
-  .profession {
-    color: #cdcdcd;
-    font-size: 115%;
-  }
-}
-
-/* If the screen size is 1200px wide or less*/
-@media screen and (max-width: 1200px) {
-  .title {
-    float: left;
-    padding-top: 27rem;
-    padding-left: 10vw;
-    font-size: 4vw;
-  }
-
-  .title p {
-    font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans,
-      Helvetica Neue, Arial, sans-serif;
-    text-align: left;
-    margin-top: -4vw;
-  }
-
-  .salutation {
-    color: #cdcdcd;
-    font-size: 70%;
-    padding-bottom: 0.5vw;
   }
 
   .name {
