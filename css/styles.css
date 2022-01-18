@@ -45,6 +45,13 @@ span {
   font-size: 125%;
 }
 
+hr {
+  width: 80px;
+  border-top: 3px solid #26bfd4;
+  margin-top: -45px;
+  margin-bottom: 100px;
+}
+
 /*------------below-header------------*/
 .below-header {
   background-image: linear-gradient(to right, #222222, #26bfd4);
@@ -242,7 +249,7 @@ header {
 
 .works-section h2 {
   margin: 0;
-  padding: 0;
+  padding: ;
   font-family: Raleway, Helvetica, Arial, sans-serif;
   color: #bfc406;
 }
@@ -388,6 +395,21 @@ header {
   font-size: 25px;
 }
 
+.about-section img {
+  border: 12px solid #313131;
+  box-shadow: -40px 40px #222222, -40px 40px 0px 10px #26bfd4;
+  -moz-box-shadow: -40px 40px #222222, -40px 40px 0px 10px #26bfd4;
+  -webkit-box-shadow: -40px 40px #222222, -40px 40px 0px 10px #26bfd4;
+  -khtml-box-shadow: -40px 40px #222222, -40px 40px 0px 10px #26bfd4;
+}
+
+/* Remove box shadow below 820px */
+@media screen and (max-width: 820px) {
+  .about-section img {
+    box-shadow: none;
+  }
+}
+
 #Skills img {
   height: 60px;
 }
@@ -417,4 +439,8 @@ header {
 
 .blog p {
   margin-bottom: 200px;
+}
+
+.fa-dot-circle-o {
+  color: #26bfd4;
 }
