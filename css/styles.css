@@ -152,6 +152,22 @@ header {
     color: #cdcdcd;
     font-size: 115%;
   }
+
+  h2 {
+    font-size: 230%;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  h2 {
+    font-size: 150%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .title {
+    padding-left: 1.5rem;
+  }
 }
 
 /*------------CONTACT SECTION------------*/
