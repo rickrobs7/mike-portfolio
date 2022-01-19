@@ -401,14 +401,22 @@ header {
   -khtml-box-shadow: -40px 40px #222222, -40px 40px 0px 10px #26bfd4;
 }
 
-/* Remove box shadow below 820px */
-@media screen and (max-width: 820px) {
+/* Remove box shadow below 767px */
+@media screen and (max-width: 767px) {
   .about-section img {
     box-shadow: none;
   }
 }
 
-#Skills img {
+/* Scale image height between two widths */
+@media (min-width: 767px) and (max-width: 991px) {
+  .about-section img {
+    height: 30%;
+    margin-top: 10%;
+  }
+}
+
+​ #Skills img {
   height: 60px;
 }
 
